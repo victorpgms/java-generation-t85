@@ -14,6 +14,8 @@ public class Exe03 {
 		
 		
 		//ENTRADA DE DADOS
+		System.out.println("**** Simulação de calculadora ****");
+		
 		System.out.print("Digite o 1º valor: ");
 		n1 = teclado.nextFloat();
 		
