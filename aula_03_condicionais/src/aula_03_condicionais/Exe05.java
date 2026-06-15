@@ -11,7 +11,7 @@ public class Exe05 {
 		int produto;
 		int quantidade;
 
-		System.out.println("****  Tabelo de produtos  ****");
+		System.out.println("****  Tabela de produtos  ****");
 		System.out.println("1 - Cachorro quente - R$ 10,00");
 		System.out.println("2 - X-Salada        - R$ 15,00");
 		System.out.println("3 - X-Bacon         - R$ 18,00");
