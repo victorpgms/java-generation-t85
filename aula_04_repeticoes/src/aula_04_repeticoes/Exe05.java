@@ -9,11 +9,13 @@ public class Exe05 {
 		
 		int n1 = 0, somaPositivo = 0;
 		
+		System.out.println("Soma de números positivos. Digite 0 para sair.");
+		
 		do {
 			System.out.print("Digite um número: ");
 			n1 = teclado.nextInt();
 			
-			if (n1 % 2 == 0) {
+			if (n1 > 0) {
 				somaPositivo += n1;
 			}
 			
