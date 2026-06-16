@@ -24,13 +24,7 @@ public class Exe05 {
 		System.out.println("A soma dos números positivos é: " + somaPositivo);
 		
 		
-		
-		
-		
-		
-		
-		
-		
+
 		teclado.close();
 
 	}
