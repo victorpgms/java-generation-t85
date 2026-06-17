@@ -1,6 +1,7 @@
 package aula_06_collections;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class CollectionArreyList {
 
@@ -30,6 +31,20 @@ public class CollectionArreyList {
 		numeros.remove(3);
 		
 		System.out.println("O objeto que está presente no índice 3: " + numeros.get(3));
+		
+		numeros.sort(null);
+		
+		System.out.println("Ordem crescente");
+		for (int numero : numeros) {
+			System.out.println(numero);
+		}
+		
+		numeros.sort(Comparator.reverseOrder());
+		
+		System.out.println("Ordem decrescente");
+		for (int numero : numeros) {
+			System.out.println(numero);
+		}
 	}
 
 }
