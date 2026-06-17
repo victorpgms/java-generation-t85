@@ -8,7 +8,7 @@ public class Exe04 {
 
 		Scanner leia = new Scanner(System.in);
 		
-		int qtAlunos = 3;
+		int qtAlunos = 10;
 		int qtNotas = 4;
 		
 		double notas [][] = new double [qtAlunos][qtNotas];
