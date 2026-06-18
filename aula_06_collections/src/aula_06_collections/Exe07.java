@@ -1,5 +1,6 @@
 package aula_06_collections;
 
+import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.concurrent.LinkedTransferQueue;
@@ -11,35 +12,40 @@ public class Exe07 {
 		Scanner teclado = new Scanner(System.in);
 		int op = 0;
 
-		Queue<String> filaClientes = new LinkedTransferQueue<String>();
+		Queue<String> filaClientes = new LinkedList<String>();
 
 		do {
 
 			System.out.println("*****************************************");
 			System.out.println("");
-			System.out.println("1 - Adicionar Cliente na Fila\n" + "2 - Listar todos os Clientes\n"
-					+ "3 - Retirar Clientes da Fila\n" + "0 - Sair");
+			System.out.println(""
+					+ "1 - Adicionar Cliente na Fila\n" 
+					+ "2 - Listar todos os Clientes\n"
+					+ "3 - Retirar Clientes da Fila\n" 
+					+ "0 - Sair");
 			System.out.println("");
 			System.out.println("*****************************************");
+			
+			//entrada de dados
 			System.out.print("\nEntre com a opção desejada: ");
 			op = teclado.nextInt();
-			teclado.nextLine();
+			teclado.nextLine(); //limpar scanner
 
 			switch (op) {
 
 			case 1: {
 				System.out.print("\nDigite o nome: ");
 				filaClientes.add(teclado.nextLine());
-			}
 
 				System.out.println("\nFila: ");
 				for (String cliente : filaClientes) {
 					System.out.println("- " + cliente);
 				}
-
+				
 				System.out.println("\nCliente adicionado!\n");
 
 				break;
+			}
 
 			case 2: {
 				if (!filaClientes.isEmpty()) {
@@ -71,8 +77,6 @@ public class Exe07 {
 				System.out.println("");
 				break;
 
-			default:
-				break;
 			}
 
 		} while (op != 0);
