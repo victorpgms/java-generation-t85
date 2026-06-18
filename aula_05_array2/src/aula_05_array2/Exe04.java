@@ -8,7 +8,7 @@ public class Exe04 {
 
 		Scanner leia = new Scanner(System.in);
 		
-		int qtAlunos = 10;
+		int qtAlunos = 2;
 		int qtNotas = 4;
 		
 		double notas [][] = new double [qtAlunos][qtNotas];
@@ -21,8 +21,7 @@ public class Exe04 {
 		for (int alunos = 0; alunos < notas.length; alunos++) {
 			for (int notaAluno = 0; notaAluno < notas[alunos].length; notaAluno++) {
 				System.out.printf("\nDigite a %dª nota do %dº aluno: ", notaAluno+1, alunos+1);
-				notas [alunos][notaAluno] = leia.nextDouble();				
-				
+				notas [alunos][notaAluno] = leia.nextDouble();						
 			}
 		}
 		
