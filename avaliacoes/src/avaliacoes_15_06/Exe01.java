@@ -1,3 +1,4 @@
+package avaliacoes_15_06;
 import java.util.Scanner;
 
 public class Exe01 {
